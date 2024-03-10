@@ -1,0 +1,3311 @@
+html {
+    scroll-behavior: smooth;
+    background-color: rgba(250, 235, 215, 0.185);
+}
+
+.body {
+    background-color: rgba(250, 235, 215, 0.185);
+    z-index: -5;
+
+
+}
+.sm_nav_bar{
+    display: none;
+}
+.cross{
+    display: none;
+}
+
+.history_name {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.edit_account_info {
+    text-align: end;
+    padding-left: 15%;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+}
+
+.account_logout {
+    text-align: start;
+    padding-left: 5%;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.account_logout button {
+    width: 150px;
+    font-weight: 600;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+.edit_account_info button {
+    width: 100px;
+    font-weight: 600;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.767);
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+#save_account_info_id {
+    display: none;
+}
+
+.edit_account_info button i {
+    padding-left: 15px;
+}
+
+.account_logout button i {
+    padding-right: 15px;
+}
+
+#customer_account_id {
+    cursor: pointer;
+}
+
+.account_info {
+    height: 85vh;
+    width: 60%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 10vh;
+    left: 20vw;
+    z-index: 4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-color: wheat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: none;
+}
+
+.account_info_name {
+    text-align: center;
+    font-size: 1.3rem;
+    height: 30px;
+    font-weight: 400;
+    position:sticky;
+    top: 28px;
+    background-color: wheat;
+    width: 100%;
+
+
+}
+
+.cancel_account_info {
+    height: 80px !important;
+    width: 100%;
+    font-size: 12px;
+    text-align: end;
+    padding-right: 15px;
+  padding-top: -5px;
+    position: sticky;
+    top: 10px;
+    
+    background-color: wheat;
+
+}
+
+.cancel_account_info button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+#user_account_form {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_account_info {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+
+.username,
+.email,
+.phone,
+.password {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+}
+
+
+
+.customer_account a {
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.copyright {
+    width: 99.2%;
+    height: 30px;
+    background-color: rgb(251, 239, 216);
+    text-align: center;
+}
+
+.restaurant_footer {
+    height: auto;
+    width: 99.2%;
+    background-color: rgb(251, 239, 216);
+    display: flex;
+    flex-wrap: wrap;
+
+
+    border-radius: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+ 
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    /* background-color: deeppink; */
+}
+
+.company_head {
+    /* margin-bottom: 10px; */
+    padding: 10px;
+    font-weight: bolder;
+    color: orange;
+    position: relative;
+    left: -40px;
+    top: 5px;
+}
+
+.contact_head {
+    /* margin-bottom: 10px; */
+    padding: 10px;
+    font-weight: bolder;
+    color: orange;
+    position: relative;
+    left: -75px;
+    top: 5px;
+}
+
+.opening_head {
+    margin-bottom: 25px;
+    padding: 10px;
+    font-weight: bolder;
+    color: orange;
+    position: relative;
+    left: -8px;
+    top: 5px;
+    margin-top: 10px;
+}
+
+.newsletter_head {
+    margin-bottom: 25px;
+    padding: 10px;
+    font-weight: bolder;
+    color: orange;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    margin-top: 10px;
+}
+
+.opening2,
+.opening1 {
+    height: 70px;
+    width: 70%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+}
+
+.company div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+
+}
+
+.opening {
+
+    padding-left: 80px;
+}
+
+
+.contact div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.company div a {
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+}
+
+.company div a:hover {
+    text-decoration: underline;
+    transition-delay: 1s;
+}
+
+.contact div a {
+    line-height: 30px;
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+}
+
+.company div a i {
+    font-size: 10px;
+    padding-right: 10px;
+}
+
+.footer_social_media {
+    display: grid !important;
+    width: 100%;
+    height: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* background-color: #b30000; */
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_social_media i {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.contact div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_list a i {
+    padding-right: 15px;
+}
+
+.footer_social_media :only-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opening div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign_up_btn {
+    width: 270px;
+    height: 50px;
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign_up_btn label {
+    height: 30px;
+    width: auto;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-left: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.chef_details {
+    width: 99vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px;
+    transition-delay: 2s;
+}
+
+.chef_div {
+    cursor: pointer;
+    width: 200px;
+    overflow: hidden;
+    height: 240px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(153, 150, 150, 0.2), 0 6px 20px 0 rgba(196, 192, 192, 0.19);
+}
+
+.chef_div1 {
+
+    width: 200px;
+    height: 230px;
+    position: relative;
+    top: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aqua; */
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 4px 0 0 rgba(153, 150, 150, 0.2), 0 6px 20px 0 rgba(196, 192, 192, 0.19);
+}
+
+.chef_div2 {
+
+    width: 200px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    position: relative;
+    top: 9px;
+
+    border-radius: 0px 8px 8px 0px;
+    box-shadow: 0 4px 0px 0 rgba(153, 150, 150, 0.2), 0 6px 20px 0 rgba(196, 192, 192, 0.19);
+}
+
+.chef_social_media {
+    width: 90%;
+    height: 50px;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.chef_social_media div {
+    padding: 5px;
+}
+
+.chef_img {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chef_name {
+
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    color: #787474;
+
+}
+
+.chef_name1 {
+    color: rgb(239, 161, 16);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes chef {
+    from {
+        width: 200px;
+    }
+
+    to {
+        width: 400px;
+    }
+}
+
+@keyframes chef2 {
+    from {
+        width: 400px;
+    }
+
+    to {
+        width: 200px;
+    }
+}
+
+.chef_div {
+    animation: chef2 0.5s forwards ease-in;
+}
+
+.chef_div:hover {
+    animation: chef 0.5s forwards ease-in;
+    transition-delay: 1s;
+
+
+}
+
+#info_name {
+    color: rgb(242, 184, 76);
+    font-weight: 600;
+
+}
+
+
+
+
+
+.book_my_table_page {
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 500px;
+    margin-top: 35px;
+    z-index: -2;
+    margin-left: -15px;
+}
+
+.book_my_table_img {
+    width: 45%;
+}
+
+.book_my_table {
+    width: 45%;
+    height: 100%;
+    /* padding: 15px; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+
+.reservation_name,
+.team_head {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    text-align: start;
+    padding-left: 15px;
+    border-radius: 8px 50px 50px 8px;
+    background-color: wheat;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+
+
+}
+
+.book_online_name {
+    /* margin-left: 15px; */
+    display: flex;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.reservation_details {
+    width: 100%;
+    height: 80%;
+    margin-left: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.reservation_submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#book_table_submit {
+    width: 80%;
+    background-color: rgb(250, 250, 103);
+    height: 40px;
+    border: transparent;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+#user_details {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    /* background-color: #b30000; */
+}
+
+#user_name_input_div,
+#email_input_div,
+#date_time_input_div,
+#noOfPeople_input_div {
+    height: 100%;
+    width: 40%;
+    position: relative;
+
+}
+
+#resvation_request_input_div {
+    height: 20%;
+    width: 80%;
+    position: relative;
+}
+
+#reservation_description {
+    width: 100%;
+    margin-top: 45px;
+    padding-left: 10px;
+    color: rgba(90, 89, 89, 0.715);
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-weight: 300; */
+    /* background-color: aqua; */
+}
+
+#resvation_request_input_div textarea {
+    width: 120%;
+    resize: none;
+    height: 100px;
+    margin-top: 10px;
+    text-indent: 15px;
+    z-index: -2;
+}
+
+#date_time_num {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 15px;
+    /* background-color: coral; */
+    justify-content: space-between;
+    /* justify-content: space-around; */
+}
+
+#user_name_input_div input {
+    height: 100%;
+    width: 100%;
+    border: none !important;
+    background-color: transparent;
+    text-indent: 20px;
+    /* background-color: blue; */
+}
+
+#email_input_div input {
+    height: 100%;
+    width: 100%;
+    border: none !important;
+    background-color: transparent;
+
+
+
+}
+
+#date_time_input_div input {
+    text-indent: 30px;
+    height: 100%;
+    width: 100%;
+    border: none !important;
+    background-color: transparent;
+    position: relative;
+    top: 15px;
+    /* background-color: blue; */
+}
+
+#noOfPeople_input_div input {
+    text-indent: 30px;
+    height: 100%;
+    width: 100%;
+    border: none !important;
+    background-color: transparent;
+    position: relative;
+    top: 15px;
+    /* background-color: blue; */
+}
+
+#user_name_input_div input:focus {
+    outline: none;
+}
+
+#email_input_div input:focus {
+    outline: none;
+}
+
+#date_time_input_div input:focus {
+    outline: none;
+}
+
+#noOfPeople_input_div input:focus {
+    outline: none;
+}
+
+#email_input_div input:focus~label,
+#email_input_div input:valid~label {
+    transform: translateY(-25px);
+    font-size: 15px;
+    border: none;
+    outline: none;
+    outline-offset: none;
+
+}
+
+#user_name_input_div input:focus~label,
+#user_name_input_div input:valid~label {
+    transform: translateY(-25px);
+    font-size: 15px;
+    border: none;
+    outline: none;
+    outline-offset: none;
+
+}
+
+#date_time_input_div input:focus~label,
+#date_time_input_div input:valid~label {
+    transform: translateY(-25px);
+    font-size: 15px;
+    border: none;
+    outline: none;
+    outline-offset: none;
+
+}
+
+#noOfPeople_input_div input:valid~label,
+#noOfPeople_input_div input:focus~label {
+    transform: translateY(-25px);
+    font-size: 15px;
+    border: none;
+    outline: none;
+    outline-offset: none;
+
+}
+
+
+.input_underline {
+    position: absolute;
+    bottom: 0px;
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+}
+
+.input_underline:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: red;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#email_input_div input:focus~.input_underline::before,
+#email_input_div input:valid~.input_underline::before {
+    transform: scaleX(1);
+}
+
+#user_name_input_div input:focus~.input_underline::before,
+#user_name_input_div input:valid~.input_underline::before {
+    transform: scaleX(1);
+}
+
+#date_time_input_div input:focus~.input_underline::before,
+#date_time_input_div input:valid~.input_underline::before {
+    transform: scaleX(1);
+}
+
+#noOfPeople_input_div input:focus~.input_underline::before,
+#noOfPeople_input_div input:valid~.input_underline::before {
+    transform: scaleX(1);
+}
+
+
+
+
+
+#email_input_div label {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    color: gray;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    padding-left: 10px;
+}
+
+#user_name_input_div label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: gray;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    padding-left: 10px;
+}
+
+#date_time_input_div label {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: gray;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    padding-left: 10px;
+}
+
+#noOfPeople_input_div label {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: gray;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    padding-left: 10px;
+}
+
+
+
+.book_online_name {
+    background-color: rgba(245, 222, 179, 0.258);
+    margin-bottom: 25px;
+    height: 50px;
+    padding-left: 15px;
+    border-radius: 8px 50px 50px 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#address_tag {
+    font-weight: bold;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+.delivery_details {
+    display: none;
+    height: 300px;
+    width: 100%;
+    margin-top: -10px !important;
+
+    /* color: #fff; */
+}
+
+.payment_details {
+    display: flex;
+
+}
+
+#user_address {
+    width: 100%;
+    height: 60px;
+    font-size: inherit;
+    resize: none;
+    border: transparent;
+    background-color: transparent;
+    border-radius: 8px;
+    /* text-indent: 15px; */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+}
+
+#user_address::-webkit-scrollbar {
+    display: none;
+}
+
+.price_details {
+    width: 200px;
+    margin-left: 15px;
+    display: flex;
+    border-radius: 8px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: -5px;
+    padding-right: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+    background-color: wheat;
+}
+
+.radio {
+    padding: 5px;
+    padding-right: 15px;
+}
+
+.payment_mode {
+    height: 200px;
+    width: 40%;
+    /* background-color: aquamarine; */
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    margin-top: 5px;
+}
+
+.mode:hover {
+    background-color: rgba(245, 222, 179, 0.502);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.payment_mode div {
+    padding: 5px;
+}
+
+.payment_page {
+    width: 60%;
+    height: 200px;
+    display: flex;
+    margin-top: -15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: #b30000; */
+}
+
+.delivery_address {
+    width: 85%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: aqua; */
+    text-wrap: wrap;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    word-wrap: break-word;
+}
+
+#change_address {
+    width: 10%;
+    border: none;
+    margin-right: 15px;
+    background-color: wheat;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    transition-delay: 1s;
+}
+#change_address i{
+    margin-top: 4px;
+}
+.sm_cart_div{
+    display: none;
+}
+ 
+.delivery_to {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.track_order_name {
+    font-size: 0.8rem;
+    color: black;
+}
+
+.track_delivery,
+.track_my_order,
+.track_my_cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tracking_order {
+    width: 100%;
+    height: 60px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.track_delivery_icon {
+    position: relative;
+    top: -2px;
+}
+
+.track_my_order_icon {
+    position: relative;
+    top: -5px;
+}
+
+.track_my_cart_icon {
+    position: relative;
+    top: -5px;
+}
+
+.track_my_cart_area,
+.track_my_order_area,
+.track_delivery_area {
+
+    width: 2rem;
+    height: 2em;
+    background-color: wheat;
+    border-radius: 50%;
+    padding: 0px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.user_added_cart {
+    width: 100%;
+    height: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.my_cart_food_details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 60px;
+    width: 80%;
+    margin-left: 15px;
+
+    /* background-color: aquamarine; */
+
+}
+
+#my_cart_id {
+    display: none;
+}
+
+.cancel_button {
+    cursor: pointer;
+    text-align: end;
+    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 0;
+    font-size: 0.8rem;
+}
+
+.my_cart_item_count {
+    /* padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 7px; */
+    margin: 0;
+    color: white;
+    font-weight: bolder;
+    background-color: red;
+}
+
+#my_cart_food_item_name {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.79);
+    font-size: 1.1rem;
+    text-wrap: nowrap;
+    text-align: start;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+#my_cart_food_item_price {
+    font-size: 15px;
+    color: rgb(130, 87, 6);
+    text-align: start !important;
+
+}
+
+.my_cart_add_remove_item_cancel_btn {
+    width: 30%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.remove_item_from_cart {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    right: -10px;
+    top: 5px;
+    color: rgb(69, 68, 68);
+    cursor: pointer;
+}
+
+.my_cart_food_info {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    /* justify-content: space-between; */
+    /* background-color: aqua; */
+}
+
+.add_remove_my_cart_food_item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.my_cart_remove_item:hover {
+    /* height: 2rem; */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    /* width: 2rem; */
+    border-radius: 50%;
+    transition: 0.1s;
+    background-color: rgb(245, 222, 179);
+    color: black;
+}
+
+.my_cart_add_item:hover {
+    /* height: 2rem; */
+    cursor: pointer;
+    /* width: 2rem; */
+    border-radius: 50%;
+    transition: 0.1s;
+    background-color: rgb(245, 222, 179);
+    color: black;
+}
+
+.user_added_cart {
+    height: 50%;
+    width: 100%;
+    /* overflow: scroll; */
+}
+
+.add_remove_my_cart_food_item {
+    width: 20%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.my_cart_item {
+    height: 60px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    border: 1px solid wheat;
+    background-color: rgba(245, 222, 179, 0.329);
+}
+
+#credit_card {
+    width: 100%;
+    /* background-color: aqua; */
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+
+}
+
+#cash {
+    display: none;
+}
+
+#net_banking {
+    display: none;
+    text-align: start;
+    line-height: 35px;
+}
+
+#pay_in_bank {
+    width: 80%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 248, 74);
+    color: rgb(7, 7, 7);
+    border: none;
+    border-radius: 7px;
+
+}
+
+.card_number {
+    text-align: start;
+
+}
+
+.card_number input {
+    border-radius: 7px;
+    text-indent: 10px;
+}
+
+.credit_cvv {
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+
+}
+
+.valid input {
+    width: 90%;
+    text-indent: 10px;
+    border-radius: 7px;
+
+}
+
+.cvv input {
+    width: 90%;
+    text-indent: 10px;
+    border-radius: 7px;
+}
+
+.cvv {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.valid {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.my_cart {
+    height: 80vh;
+    width: 80%;
+    position: fixed;
+    right: 12%;
+    top: 10%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #999;
+    display: block !important;
+    transition: all .5s ease-in-out;
+    z-index: 10;
+    background-color: rgb(249, 241, 227);
+}
+
+#login_page {
+    height: 80vh;
+    width: 80%;
+    position: fixed;
+    right: 12%;
+    top: 10%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    z-index: 10;
+    background-color: wheat;
+}
+
+.my_cart_head {
+
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    margin-top: 1px !important;
+    background-color: wheat;
+    border-radius: 7px;
+
+}
+
+#track_order_head {
+    padding-left: 8%;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.home_cart {
+    width: 110%;
+
+
+}
+
+#cart_head {
+    display: flex;
+    /* background-color: aquamarine; */
+    justify-content: space-between;
+    align-items: center;
+    width: 110%;
+    height: 10%;
+    /* position: relative; */
+    /* background-color: aquamarine; */
+}
+
+.highlighted {
+    background-color: #f4cc9774;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.item_img {
+    position: relative;
+
+}
+
+#cart_item_count {
+    height: 15px;
+    width: 15px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    position: relative;
+    top: -28px;
+    left: 55px;
+
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+
+}
+
+.add_to_cart {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+
+    background-color: transparent;
+    /* Semi-transparent background for visibility */
+    text-align: center;
+    /* Center content horizontally and vertically */
+    z-index: -1;
+    /* Initially set to -1 to be behind the image */
+}
+
+.add_to_cart span {
+    /* font-size: 5rem; */
+
+    color: wheat;
+}
+
+.cart_count {
+    position: relative;
+    top: -15px;
+    left: -5px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: small;
+}
+
+.item:hover .add_to_cart {
+    text-align: center;
+    display: flex;
+    /* Show add_to_cart div when item_img is hovered */
+    align-items: center;
+    /* Center content vertically */
+    justify-content: space-evenly;
+    /* Center content horizontally */
+    z-index: 2;
+    /* Place the add_to_cart div in front of the image when hovered */
+
+}
+
+.item:hover img {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.select_catagory {
+    display: flex;
+    justify-content: center;
+}
+
+.remove_item :hover {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    transition: 0.1s;
+    background-color: rgba(245, 222, 179, 0.438);
+    color: black;
+}
+
+.add_item:hover {
+    height: 2rem;
+    width: 2rem;
+    transition: 0.1s;
+    border-radius: 50%;
+    background-color: rgba(245, 222, 179, 0.438);
+    color: black;
+}
+
+#menu_catagory {
+    width: 50%;
+}
+
+#show_meal_items,
+#show_beverages_items {
+    border: none;
+    background-color: transparent;
+}
+
+.meal,
+.beverages,
+.recommended,
+.soup,
+.comboo,
+.gravy,
+.starter,
+.rice_noodle,
+.kebab,
+.dessert {
+
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* border: 2px solid rgb(239, 193, 138) ;
+    border-top: none;
+    border-left: none;
+    border-right: none; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border-radius: 15px; */
+    width: 100% !important;
+    /* background-color: aquamarine; */
+}
+
+.meal_head {
+    cursor: pointer;
+    height: 50px;
+    /* background-color: rgb(255, 242, 225); */
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -50px;
+    width: 100%;
+    font-weight: bolder;
+    color: rgb(59, 59, 59);
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: aqua; */
+
+}
+
+.beverages_head,
+.soup_head,
+.dessert_head,
+.gravy_head,
+.comboo_head,
+.briyani_head,
+.rice_noodle,
+.kebab_head,
+.starter_head {
+    cursor: pointer;
+    height: 50px;
+    margin-bottom: -50px;
+    /* background-color: rgb(255, 242, 225); */
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: bolder;
+    color: rgb(59, 59, 59);
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.recommended_head {
+    cursor: pointer;
+    height: 50px;
+    margin-bottom: -50px;
+    /* background-color: rgb(255, 242, 225); */
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: bolder;
+    color: rgb(59, 59, 59);
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.meal_head {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.beverages_head,
+.recommended_head,
+.comboo_head,
+.gravy_head,
+.soup_head,
+.dessert_head,
+.briyani_head,
+.rice_noodle_head,
+.kebab_head,
+.starter_head span {
+    padding-left: 20px;
+
+}
+
+#show_beverages_items {
+    margin-right: 20px;
+    /* background-color: aquamarine; */
+}
+
+.item_details {
+    padding: 10px;
+}
+
+.item_name {
+    height: 10%;
+    color: rgb(40, 40, 40);
+}
+
+.item_description {
+    height: 20%;
+    font-size: 0.61rem;
+    color: rgba(158, 124, 74, 0.772);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.item_rating {
+    margin-top: -10px;
+    height: 10%;
+    font-size: 30px;
+    color: rgb(233, 157, 64);
+    padding: -5px;
+    /* background-color: aqua; */
+}
+
+.item_img {
+    /* background: url(menu_items/akemy-mory-v8B1gN_QUbI-unsplash.jpg); */
+    margin-top: 5px;
+    background-position: center;
+    background-size: contain;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.menu_items_meal {
+    color: #6c7a89 !important;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+
+}
+
+.menu {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px !important;
+}
+
+.item,
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8,
+.item9,
+.item10 {
+    height: 250px;
+    width: 350px;
+    background-color: rgba(250, 235, 215, 0.354);
+    border-radius: 15px;
+    margin: 10px;
+    float: left;
+    transition: all .4s ease-in-out;
+
+
+}
+
+.food {
+    background-color: rgba(250, 235, 215, 0.13);
+    text-align: center;
+
+}
+
+.food_timings {
+    margin-top: 48px !important;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+
+}
+
+.food_timings_icon {
+    position: relative;
+    top: -8px;
+}
+
+.breakfast {
+    font-size: 0.9rem;
+    width: 35%;
+    display: flex;
+    line-height: 17px;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+    align-items: center;
+    border-right: 2px solid gray;
+}
+
+.lunch {
+    font-size: 0.9rem;
+    width: 30%;
+    display: flex;
+    line-height: 17px;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+    align-items: center;
+    border-right: 2px solid gray;
+}
+
+.dinner {
+    font-size: 0.9rem;
+    width: 30%;
+    display: flex;
+    line-height: 17px;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+    align-items: center;
+    border-right: 2px solid gray;
+    border-right: none;
+
+}
+
+
+#ninja1 {
+
+    width: 100px;
+}
+
+#food_item_head_name {
+    font-size: 19px;
+    color: rgb(244, 204, 151);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    position: relative;
+    top: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#ninja2 {
+    width: 100px;
+
+}
+
+.food_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+
+    /* background-color: rgba(250, 235, 215, 0.185); */
+}
+
+.food_popular_items {
+    /* background-color: aqua; */
+    text-align: center;
+    width: 100%;
+    /* background-color: rgba(250, 235, 215, 0.146); */
+    height: 80px;
+    margin-top: -25px;
+
+}
+
+.food_popular_items p {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.food_item_head {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home_search_input {
+    border-radius: 50px;
+    text-indent: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.66);
+    padding: 7px;
+    width: 250px;
+}
+
+#home_search_icon {
+    background-color: burlywood;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    left: -30px;
+
+}
+
+.home_search {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.home_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px !important;
+}
+
+.home {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: antiquewhite; */
+
+}
+
+.home_content {
+    background-color: rgba(244, 232, 216, 0.016);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    flex-direction: column;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#home_content1 {
+    font-size: 2.5em;
+
+
+}
+
+#home_content2 {
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#home_content3 {
+    color: rgba(227, 178, 105, 0.772);
+    margin-top: 10px;
+
+}
+
+.header_navigation {
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(254, 217, 147, 0.091);
+    height: 80px;
+    /* background-color: rgba(254, 217, 147, 0.372);
+     */
+    background-color: wheat;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.navigation_items {
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+#nav_items_bar {
+    display: none;
+}
+
+.navigation_items a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo_name {
+    /* width: 35%; */
+    height: 80px;
+    /* background-color: aqua; */
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+
+    /* font-size: 1.2rem; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.customer_account {
+    width: 10%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#master_chef_logo {
+    height: 8rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between !important;
+    /* align-items: center; */
+    width: 100%;
+}
+
+.catagory_head {
+    height: 45px;
+    width: 113%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(244, 204, 151);
+
+    /* background-color: brown; */
+    border-radius: 0px 25px 25px 0px;
+}
+
+.catagory_head span {
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 1800px) {
+    .company {
+        width: 25%;
+    }
+
+    .contact {
+        width: 25%;
+    }
+
+    .opening {
+        width: 25%;
+    }
+
+    .newsletter {
+        width: 25%;
+    }
+
+    .book_online_name {
+        margin-left: 15px;
+    }
+
+    .payment_details {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        /* background-color: aquamarine; */
+
+    }
+
+    #login_page {
+        width: 50%;
+
+        height: 70vh;
+        margin-right: 180px;
+        margin-top: 10vh;
+    }
+
+    .my_cart {
+        height: 85vh !important;
+    }
+
+    .my_cart_item_info {
+        margin-top: 20px !important;
+        width: 90% !important;
+        /* background-color: aqua; */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 50px;
+    }
+
+    .move_to_order_page {
+        display: flex;
+        justify-content: center;
+        height: 55px;
+        margin-top: 10px !important;
+        /* background-color: aqua; */
+    }
+
+    #move_to_delivery_id {
+        display: none;
+    }
+
+    #move_to_order_page_id,
+    #move_to_delivery_id {
+        width: 20%;
+        height: 40px;
+        background-color: wheat;
+        border: none;
+        border-radius: 7px;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+    }
+
+    #move_to_delivery_id {
+        width: 40%;
+        background-color: rgb(248, 248, 74);
+        color: rgb(7, 7, 7);
+    }
+
+    #move_to_delivery_page_id {
+        width: 20%;
+        height: 40px;
+        background-color: wheat;
+        border: none;
+        border-radius: 7px;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: none;
+
+    }
+
+    .user_added_cart {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        justify-content: start;
+        overflow: scroll;
+        align-items: start !important;
+        text-align: center;
+        overflow-x: hidden;
+        height: 250px;
+
+    }
+
+    #order_details {
+        height: 250px;
+        /* background-color: aquamarine; */
+        display: flex;
+        justify-content: center;
+
+        display: none;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    #order_details .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #F5DEB3 !important;
+        /* Wheat color */
+    }
+
+    #user_description {
+        display: none;
+    }
+
+    #user_description_area {
+        width: 100%;
+        background-color: rgb(249, 233, 205);
+        text-indent: 20px;
+        resize: none;
+        border: 1px solid rgba(245, 222, 179, 0.881);
+        border-radius: 8px;
+        margin-top: -10px;
+    }
+
+    #user_description_area :focus {
+        border: none;
+    }
+
+    .move_to_delivery_page {
+        display: none;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 20px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: gray;
+    }
+
+    .my_cart_item {
+        width: 400px;
+        /* place-self: center; */
+        /* background-color: aqua; */
+    }
+
+
+    .add_remove_my_cart_food_item {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        position: relative;
+        left: 20px;
+    }
+
+    .my_cart_item_count {
+        padding: 5px;
+        margin-left: 8px;
+        margin-right: 8px;
+        border-radius: 8px;
+    }
+
+    .my_cart_remove_item,
+    .my_cart_add_item {
+        padding: 5px;
+    }
+
+    .menu_button {
+        display: none;
+    }
+
+    .menu_list1,
+    .menu_list2,
+    .menu_list3,
+    .menu_list4,
+    .menu_list11,
+    .menu_list5,
+    .menu_list6,
+    .menu_list7,
+    .menu_list8,
+    .menu_list9,
+    .menu_list10 {
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        padding: 5px;
+
+    }
+
+    /* .menu_items{
+        height: 600px;
+        overflow: scroll;
+        -ms-overflow-style: none;  
+        scrollbar-width: none;   
+    }
+      */
+    /* .menu_items::-webkit-scrollbar {
+    display: none;
+  } */
+    div .menu_catagory {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 85px;
+        height: 500px;
+        /* background-color: aquamarine; */
+    }
+
+    .menu_catagory a {
+        text-decoration: none;
+        color: black;
+        /* font-weight: bold; */
+    }
+
+    .menu_list {
+        margin-top: 10px;
+    }
+
+    #height_manage2,
+    #height_manage3,
+    #height_manage4,
+    #height_manage5,
+    #height_manage6,
+    #height_manage7,
+    #height_manage8,
+    #height_manage9,
+    #height_manage10 {
+        height: 85px;
+    }
+
+    #menu_list_id1:hover {
+        background-color: rgb(248, 229, 205);
+        cursor: pointer;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    #menu_list_id2:hover {
+        background-color: rgb(248, 229, 205);
+        cursor: pointer;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    #menu_list_id3:hover {
+        background-color: rgb(248, 229, 205);
+        cursor: pointer;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    #menu_list_id4:hover {
+        background-color: rgb(248, 229, 205);
+        cursor: pointer;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    #menu_list_id11:hover {
+        background-color: rgb(248, 229, 205);
+        cursor: pointer;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    #menu_list_id5:hover {
+        background-color: rgb(248, 229, 205);
+        cursor: pointer;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    #menu_list_id6:hover {
+        background-color: rgb(248, 229, 205);
+        cursor: pointer;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    #menu_list_id7:hover {
+        background-color: rgb(248, 229, 205);
+        cursor: pointer;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    #menu_list_id8:hover {
+        background-color: rgb(248, 229, 205);
+        cursor: pointer;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    #menu_list_id9:hover {
+        background-color: rgb(248, 229, 205);
+        cursor: pointer;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    #menu_list_id10:hover {
+        background-color: rgb(248, 229, 205);
+        cursor: pointer;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    .menu_items {
+        /* background-color: rgb(186, 201, 201); */
+        width: 80% !important;
+    }
+
+    .menu_catagory {
+        /* background-color: rgb(186, 131, 49); */
+        width: 20% !important;
+    }
+
+    .meal_head,
+    .beverages_head,
+    .recommended_head,
+    .gravy_head,
+    .starter_head,
+    .soup_head,
+    .comboo_head,
+    .dessert_head,
+    .briyani_head,
+    .rice_noodle_head,
+    .kebab_head,
+    .starter_head {
+        background-color: rgb(244, 204, 151);
+        width: 100%;
+        height: 45px;
+        margin-bottom: 20px;
+        border-radius: 25px 5px 5px 25px;
+        /* background-color: blue; */
+    }
+
+    .menu_items_meal,
+    .menu_items_beverages,
+    .menu_items_gravy,
+    .menu_items_recommended,
+    .menu_items_starter,
+    .menu_items_soup,
+    .menu_items_dessert,
+    .menu_items_comboo,
+    .menu_items_briyani,
+    .menu_items_rice_noodle,
+    .menu_items_kebab {
+        color: #6c7a89 !important;
+        font-weight: bold;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        display: grid;
+        place-content: center;
+        /* margin-left: 4%; */
+        /* margin-top: 50px !important; */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+        width: 100%;
+
+
+    }
+
+    .item0,
+    .item,
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5,
+    .item6,
+    .item7,
+    .item8,
+    .item9,
+    .item10 {
+        margin: auto;
+        height: 280px;
+        width: 91%;
+        background-color: rgba(250, 235, 215, 0.354);
+        border-radius: 15px;
+        /* margin: 10px; */
+        float: left;
+        transition: all .4s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+
+    }
+
+    .breakfast,
+    .lunch,
+    .dinner {
+        text-align: start;
+        width: 12%;
+        /* background-color: rgba(250, 235, 215, 0.185); */
+    }
+
+    .home_image {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #home_knife {
+        position: relative;
+        left: -90px;
+        top: 230px;
+        margin-left: -4% !important;
+        height: 100px;
+        rotate: 10deg;
+        width: 90px;
+
+    }
+
+    #chef_annapoorani {
+        position: relative;
+        left: -20px;
+    }
+
+    #home_pizza {
+        width: 200px;
+        position: relative;
+        top: 60px;
+        height: 200px;
+        left: -80px;
+    }
+
+    .home_main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        background-color: rgba(250, 235, 215, 0.185);
+    }
+
+    .home {
+        width: 60% !important;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 220px;
+    }
+
+    .home_image {
+        width: 40% !important;
+        text-align: center;
+    }
+
+    #home_search_input {
+        width: 300px;
+    }
+
+    #home_search_icon {
+        width: 150px;
+    }
+
+    .navigation {
+        position: relative;
+    }
+
+    .header_navigation {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 5;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .logo_name {
+        width: 25%;
+    }
+
+    #master_chef_logo {
+        height: 70px;
+    }
+
+    .customer_account {
+        width: 10%;
+    }
+
+    .navigation_items {
+        width: 32%;
+    }
+
+    .user_account_info {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .username textarea {
+        width: 250px;
+        height: 35px;
+        border-radius: 2px;
+        border: none;
+        resize: none;
+
+    }
+
+    .email textarea {
+        width: 250px;
+        height: 35px;
+        border-radius: 2px;
+        border: none;
+        resize: none;
+    }
+
+    .phone textarea {
+        width: 250px;
+        height: 35px;
+        border-radius: 2px;
+        border: none;
+        resize: none;
+
+    }
+
+    .password textarea {
+        width: 250px;
+        height: 35px;
+        border-radius: 2px;
+        border: none;
+        resize: none;
+
+    }
+
+    .phone {
+        display: flex;
+        justify-content: start;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .user_account_info {
+        display: flex;
+        justify-content: center;
+    }
+
+    .username textarea {
+        width: 350px;
+        height: 35px;
+        border-radius: 2px;
+        border: none;
+        resize: none;
+
+    }
+
+    .email textarea {
+        width: 350px;
+        height: 35px;
+        border-radius: 2px;
+        border: none;
+        resize: none;
+    }
+
+    .phone textarea {
+        width: 350px;
+        height: 35px;
+        border-radius: 2px;
+        border: none;
+        resize: none;
+
+    }
+
+    .password textarea {
+        width: 350px;
+        height: 35px;
+        border-radius: 2px;
+        border: none;
+        resize: none;
+
+    }
+
+    .company {
+        width: 50%;
+        margin-left: -50px;
+    }
+
+    .contact {
+        width: 50%;
+        margin-left: -35px;
+    }
+
+    .opening {
+        width: 50%;
+        padding-left: 120px;
+    }
+
+    .newsletter {
+        width: 50%;
+        padding-left: 50px;
+    }
+
+    #login_page {
+        width: 55%;
+        height: 70vh;
+        margin-right: 0.5%;
+        margin-top: 10vh;
+    }
+
+    .sign_up_btn {
+        width: 260px;
+    }
+
+    .payment_details {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        /* background-color: aquamarine; */
+
+    }
+
+    .user_added_cart {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        justify-content: center;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 20px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: red;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #b30000;
+    }
+
+    .my_cart_item {
+        width: 400px;
+        align-self: start;
+        justify-content: center;
+        justify-self: center;
+        /* place-self:  center; */
+        /* background-color: aqua; */
+    }
+
+
+    .add_remove_my_cart_food_item {
+        width: 100%;
+        position: relative;
+        left: 40px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .my_cart_item_count {
+        padding: 5px;
+        border-radius: 8px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .my_cart_remove_item,
+    .my_cart_add_item {
+        padding: 8px;
+    }
+
+    .menu_button {
+        display: block;
+    }
+
+    .menu_list_for_md {
+        display: block;
+        position: relative;
+        left: -250px;
+        /* width: 40vw; */
+        /* display: none; */
+        bottom: 10px;
+        /* height: 350px; */
+        overflow: scroll;
+        /* background-color: bisque; */
+        border-radius: 8px;
+        padding: 19px;
+        background-color: rgb(254, 249, 240);
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        animation-name: menu_coming;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    /* .menu_list_for_md a:focus{
+        display: none;
+    } */
+    @keyframes menu_coming {
+        0% {
+            height: 100px;
+            width: 20vw;
+        }
+
+        100% {
+            height: 350px;
+            width: 40vw;
+        }
+    }
+
+    #menu_list_for_md_id {
+        display: none;
+    }
+
+    .menu_list_for_md::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menu_list_for_md a {
+        /* padding: 2px; */
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu_button {
+        position: fixed;
+        bottom: 20px;
+        left: 78vw;
+        cursor: pointer;
+    }
+
+    #menu_button_id {
+        border: none;
+        cursor: pointer;
+        width: 15vw;
+        height: 2rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: red;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    #height_manage1 {
+        display: none;
+    }
+
+    .menu_catagory {
+        display: none;
+    }
+
+    .menu_items {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .menu_items_meal,
+    .menu_items_beverages,
+    .menu_items_recommended,
+    .menu_items_gravy,
+    .menu_items_starter,
+    .menu_items_soup,
+    .menu_items_comboo,
+    .menu_items_dessert,
+    .menu_items_briyani,
+    .menu_items_rice_noodle,
+    .menu_items_kebab {
+        color: #6c7a89 !important;
+        font-weight: bold;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        display: grid;
+        place-content: center;
+        /* margin-left: 4%; */
+        /* margin-top: 50px !important; */
+        /* background-color: aqua; */
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 10px;
+        /* grid-column-gap: 10px; */
+        width: 90%;
+
+
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .company {
+        width: 50%;
+    }
+
+    .contact {
+        width: 50%;
+        margin-left: -35px;
+    }
+
+    .opening {
+        width: 50%;
+    }
+
+    .newsletter {
+        width: 50%;
+    }
+
+    .book_my_table_img {
+        display: none;
+    }
+
+    .book_my_table {
+        width: 88%;
+    }
+
+    #login_page {
+        width: 80%;
+    }
+
+    .payment_details {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+
+        /* background-color: aquamarine; */
+
+    }
+
+    .delivery_to {
+        margin-top: 15px;
+    }
+
+    #user_address {
+        height: 80px;
+    }
+
+    .price_details {
+        margin-top: 20px;
+    }
+
+    .payment_details {
+        margin-top: 15px;
+    }
+
+    .move_to_order_page {
+        margin-top: 100px !important;
+    }
+
+    .meal_head,
+    .beverages_head,
+    .recommended_head,
+    .soup_head,
+    .gravy_head,
+    .comboo_head,
+    .starter_head,
+    .dessert_head,
+    .briyani_head,
+    .rice_noodle_head,
+    .kebab_head,
+    .starter_head {
+        background-color: rgb(244, 204, 151);
+        width: 100%;
+        height: 45px;
+        margin-bottom: 20px;
+        border-radius: 5px 5px 5px 5px;
+        /* background-color: blue; */
+    }
+
+    .menu_items_meal,
+    .menu_items_beverages,
+    .menu_items_comboo,
+    .menu_items_recommended,
+    .menu_items_gravy,
+    .menu_items_starter,
+    .menu_items_soup,
+    .menu_items_dessert,
+    .menu_items_briyani,
+    .menu_items_rice_noodle,
+    .menu_items_kebab {
+        color: #6c7a89 !important;
+        font-weight: bold;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        display: grid;
+        place-content: center;
+        /* margin-left: 4%; */
+        /* margin-top: 50px !important; */
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 10px;
+        /* grid-column-gap: 10px; */
+
+
+
+    }
+
+    .item0,
+    .item1,
+    .item,
+    .item2,
+    .item3,
+    .item4,
+    .item5,
+    .item6,
+    .item7,
+    .item8,
+    .item9,
+    .item10 {
+        margin: auto;
+        height: 250px;
+        width: 90%;
+        background-color: rgba(250, 235, 215, 0.354);
+        border-radius: 15px;
+        /* margin: 10px; */
+        float: left;
+        transition: all .4s ease-in-out;
+
+
+    }
+
+    .breakfast,
+    .lunch,
+    .dinner {
+        width: 25%;
+        text-align: start;
+    }
+
+    .home_image {
+        display: none;
+    }
+
+    .home_main {
+        height: 300px;
+    }
+
+    #home_content1 {
+        font-size: 2em;
+
+    }
+
+    #home_content2 {
+        font-weight: bolder;
+        font-size: 1.6em;
+    }
+
+    #home_content3 {
+        color: rgba(227, 178, 105, 0.772);
+        font-size: 1.2em;
+
+    }
+
+    .logo_name {
+        font-size: 12px;
+        width: 35%;
+    }
+
+    #master_chef_logo {
+        height: 9vw;
+    }
+
+    .customer_account {
+        width: 8%;
+
+    }
+
+    #nav_item_contact {
+        display: none;
+    }
+
+    #account {
+        display: none;
+    }
+
+    .navigation_items {
+        width: 40%;
+        /* background-color: aqua; */
+    }
+
+    .account_info {
+        width: 100%;
+        left: 0;
+        height: 80vh;
+    }
+
+    .user_account_info {
+        display: flex;
+        justify-content: center;
+    }
+
+    .username textarea {
+        width: 350px;
+        height: 35px;
+        border-radius: 2px;
+        border: none;
+        resize: none;
+
+    }
+
+    .email textarea {
+        width: 350px;
+        height: 35px;
+        border-radius: 2px;
+        border: none;
+        resize: none;
+    }
+
+    .phone textarea {
+        width: 350px;
+        height: 35px;
+        border-radius: 2px;
+        border: none;
+        resize: none;
+
+    }
+
+    .password textarea {
+        width: 350px;
+        height: 35px;
+        border-radius: 2px;
+        border: none;
+        resize: none;
+
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .account_info {
+        width: 100%;
+        left: 0;
+        height: 80vh;
+    }
+
+    .company {
+        width: 100%;
+        margin-left: -60px;
+    }
+
+    .contact {
+        width: 100%;
+        margin-left: -40px;
+    }
+
+    .opening {
+        width: 100%;
+    }
+
+    .newsletter {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    #login_page {
+        height: 60vh;
+        width: 97%;
+        position: fixed;
+        left: 1.5%;
+        top: 20%;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #999;
+        display: block !important;
+        transition: all .5s ease-in-out;
+        z-index: 10;
+        background-color: rgb(249, 241, 227);
+    }
+
+    .user_added_cart {
+        height: 500px;
+    }
+
+    .my_cart_item_info {
+        font-size: 20px;
+    }
+
+    .menu_button {
+        position: fixed;
+        bottom: 40px;
+        left: 74vw;
+       
+    }
+
+    .menu_list_for_md {
+        display: block;
+        position: relative;
+        left: -220px;
+        bottom: 10px;
+        overflow: scroll;
+        border-radius: 8px;
+        padding: 19px;
+        background-color: rgb(254, 249, 240);
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        animation-name: menu_coming;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes menu_coming {
+        0% {
+            height: 100px;
+            width: 20vw;
+        }
+
+        100% {
+            height: 400px;
+            width: 60vw;
+        }
+    }
+#menu_list_for_md_id{
+    background-color: wheat;
+}
+    #menu_button_id {
+        border: none;
+        cursor: pointer;
+        width: 18vw;
+        height: 2rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(48, 47, 47);
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        border-radius: 8px;
+    
+    }
+
+    .menu_items_meal,
+    .menu_items_comboo,
+    .menu_items_beverages,
+    .menu_items_gravy,
+    .menu_items_recommended,
+    .menu_items_soup,
+    .menu_items_dessert,
+    .menu_items_briyani,
+    .menu_items_rice_noodle,
+    .menu_items_kebab,
+    .menu_items_starter {
+        color: #6c7a89 !important;
+        font-weight: bold;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        display: grid;
+        place-content: center;
+        /* margin-left: 4%; */
+        /* margin-top: 50px !important; */
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 20px;
+
+
+    }
+
+    .item1,
+    .item0,
+    .item,
+    .item2,
+    .item3,
+    .item4,
+    .item5,
+    .item6,
+    .item7,
+    .item8,
+    .item9,
+    .item10 {
+        margin: auto;
+        height: 250px;
+        width: 100%;
+        background-color: rgba(250, 235, 215, 0.354);
+        border-radius: 15px;
+        /* margin: 10px; */
+        float: left;
+        transition: all .4s ease-in-out;
+
+
+    }
+
+    .breakfast,
+    .lunch,
+    .dinner {
+        display: flex;
+        align-items: center !important;
+        width: 28%;
+        text-align: start;
+        font-size: 12px;
+    }
+
+    .home_image {
+        display: none;
+    }
+
+    #home_search_input {
+        width: 220px;
+    }
+
+    #home_search_icon {
+        width: 100px;
+    }
+
+    .home {
+        height: 150px;
+        /* background-color: aqua; */
+    }
+
+    .home_main {
+        height: 250px;
+    }
+
+    #home_content1 {
+        font-size: 1.54em;
+
+    }
+
+    #home_content2 {
+        font-weight: bolder;
+        font-size: 1.1em;
+    }
+
+    #home_content3 {
+        color: rgba(227, 178, 105, 0.772);
+        font-size: 0.9em;
+
+    }
+
+    .logo_name {
+        font-size: 15px;
+        width: 60%;
+
+    }
+
+    #nav_items_bar {
+        display: block;
+        font-size: 20px;
+        text-align: end;
+        margin-left: 30px;
+    }
+
+    #master_chef_logo {
+        height: 12vw;
+    }
+
+    .customer_account {
+        width: 17%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .navigation_items {
+        display: none;
+    }
+
+    .my_cart {
+        height: 98vh;
+        width: 100%;
+        position: fixed;
+        right: 1px;
+        left: 1px;
+        top: 9.5%;
+         z-index: 3;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #999;
+        /* cursor: pointer; */
+        transition: all .5s ease-in-out;
+        z-index: 10;
+        background-color: rgb(249, 241, 227);
+    }
+    .menu_button{
+        bottom: 70px;
+    }
+    
+.sm_cart_div{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: red;
+    bottom: 1px;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+#move_to_order_page_id{
+    margin-top: -60px;
+}
+#user_description{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#move_to_delivery_page_id{
+    margin-top: 150px;
+}
+#move_to_delivery_id{
+    margin-top: 160px;
+}
+.sm_nav_bar{
+    width: 100vw;
+    /* display: block; */
+    height: 300px;
+    position: fixed;
+    top: 81px;
+    background-color: rgb(254,252,250);
+    animation: nav 2s ease forwards;
+    display: none;
+  z-index: 999;
+}
+@keyframes nav {
+    from{
+          right:  -100% ;
+          width: 0%;
+    }
+    top{
+right:   0%;
+width: 100%;
+    }
+    
+}
+#sm_nav_items{
+    position: fixed;
+    top: 100px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    background-color: rgb(254,252,250);
+    z-index: 999;
+  }
+  
+ #sm_nav_items li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  #sm_nav_items li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  #sm_nav_items li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+ 
+  .cross{
+  
+    width: 30px;
+    /* background-color: #04AA6D; */
+     margin-left: 30px;
+   display: none;
+  }
+  @keyframes cross1 {
+    0%{
+ opacity: 0;
+rotate: 45deg;
+top: 5px;
+    }
+    100%{
+ 
+rotate: 45deg;
+ opacity: 1;
+ top: 8px;
+ left: 5px;
+ 
+ 
+    }
+    
+  }
+  @keyframes cross2 {
+    0%{
+ opacity: 0;
+rotate: -25deg;
+top: -5px;
+    }
+    100%{
+ 
+rotate: -45deg;
+ opacity: 1;
+ top: -10px;
+    }
+    
+  }
+  .cross1 {
+height: 18px;
+width: 2px;
+background-color: #000;
+animation: cross1;
+animation-duration: 1s;
+position: relative;
+animation-fill-mode: forwards;
+transition: 2s;
+border-radius: 15px;
+/* padding-left: 5px; */
+  }
+  .cross2{
+    height: 18px;
+    width: 2px;
+    background-color: black;
+   margin-left: 5px;
+   animation: cross2;
+   position: relative;
+animation-duration: 1s;
+border-radius: 15px;
+animation-fill-mode: forwards;
+transition: 2s;
+      }
+      #display_account{
+        display: none;
+      }
+}
+
+.home {
+    height: 40vh;
+    /* background-color: #b30000; */
+}
+
+.home_content {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+/* #store_in_database{
+    display: none;
+} */
+.sm_nav_bar{
+    display: none;
+}
+#store_in_database{
+	    display: none;
+}
